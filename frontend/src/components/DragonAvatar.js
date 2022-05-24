@@ -22,14 +22,19 @@ class DragonAvatar extends Component {
     const dragonPropertyMap = {};
 
     this.props.dragon.traits.forEach(trait => {
-      const {traitType, traitValue } = trait;
-    })
-    const sizing = { width: 200, height: 200 };
+      const { traitType, traitValue } = trait;
+
+      dragonPropertyMap[traitType] = propertyMap[traitType][traitValue];
+    });
+
+    const { backgroundColor, build, pattern, size } = dragonPropertyMap;
+
+    const sizing = { width: size, height: size };
     return (
       <div className='dragon-avatar-image-wrapper'>
-        <div className='dragon-avatar-image-background' style={{ backgroundColor: propertyMap.backgroundColor.blue, ...sizing }}></div>
-        <img className='dragon-avatar-image-pattern' src={propertyMap.pattern.spotted} style={{ ...sizing }}></img>
-        <img className='dragon-avatar-image' src={propertyMap.build.sporty} style={{ ...sizing }}></img>
+        <div className='dragon-avatar-image-background' style={{ backgroundColor: backgroundColor, ...sizing }}></div>
+        <img className='dragon-avatar-image-pattern' src={pattern} style={{ ...sizing }}></img>
+        <img className='dragon-avatar-image' src={build} style={{ ...sizing }}></img>
       </div>
     )
   }
