@@ -1,14 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Generation from './components/Generation';
-import Dragon from './components/Dragon'
+import Dragon from './components/Dragon';
+
+
+import './index.css';
 
 
 render(
   <div>
-    <h2>Dragon Stack from React</h2>
+    <h2>Dragon Stack</h2>
     <Generation />
-    <Dragon/>
+    <Dragon />
     </div>,
   document.getElementById('root')
 );
