@@ -15,11 +15,14 @@
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
-    "redux": "^4.2.0"
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.0",
     "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "@babel/preset-env": "^7.18.0"
+    "@babel/preset-env": "^7.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
   }
 }

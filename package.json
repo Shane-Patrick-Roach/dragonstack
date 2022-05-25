@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Shane-Patrick-Roach/dragonstack/issues"
   },
-  "homepage": "https://github.com/Shane-Patrick-Roach/dragonstack#readme"
+  "homepage": "https://github.com/Shane-Patrick-Roach/dragonstack#readme",
+  "dependencies": {
+    "react-redux": "^8.0.2"
+  }
 }
