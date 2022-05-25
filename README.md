@@ -6,3 +6,4 @@ A full-stack application that allows users to create and trade dragons.
 - Node.js
 - PostgreSQL
 - React
+- Redux
